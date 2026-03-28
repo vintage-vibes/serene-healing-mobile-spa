@@ -14,3 +14,15 @@ navlinks.forEach(link => {
     icon.classList.remove("active");
   });
 });
+
+
+
+const track = document.querySelector('.yt-track');
+
+document.querySelector('.right').onclick = () => {
+  track.scrollBy({ left: 300, behavior: 'smooth' });
+};
+
+document.querySelector('.left').onclick = () => {
+  track.scrollBy({ left: -300, behavior: 'smooth' });
+};
